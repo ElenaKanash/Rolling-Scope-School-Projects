@@ -1,20 +1,172 @@
-@import "base/base";
-@import "base/normalize";
-@import "base/logo";
-@import "base/buttons";
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
 
-@import "abstracts/constance";
+nav,footer,header,aside{display: block;}
 
-@import "components/contacts";
-@import "components/tickets";
-@import "components/explore";
-@import "components/video";
-@import "components/visiting";
-@import "components/welcome";
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
 
-@import "layouts/container";
-@import "layouts/header";
-@import "layouts/footer";
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+@mixin font($fz, $lh, $fw, $color){
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $color;
+}
+
+%font-forum {
+  font-family: 'Forum', cursive;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: calc(100% - 50px);
+}
+
+.logo__title {
+  @extend %font-forum;
+  @include font(50px, 60px, bold,  blue);
+}
+
+.header {
+}
+.container {
+}
+.header__container {
+}
+.logo {
+}
+.logo__title {
+}
+.nav {
+}
+.nav__list {
+}
+.nav-item {
+}
+.section.section-welcome {
+}
+.section-title {
+}
+.subtitle {
+}
+.welcom__button {
+}
+.section.section-visiting {
+}
+.section-title.title_underline.title_colored {
+}
+.visiting__container {
+}
+.visiting__link {
+}
+.visiting__card {
+}
+.visiting-image {
+}
+.visiting-subtittle {
+}
+.visiting-text {
+}
+.section.section-explore {
+}
+.explore__descriptuon {
+}
+.section-title.title_underline {
+}
+.explore__img {
+}
+.section.section-video {
+}
+.video__player {
+}
+.video-play {
+}
+.video__panel {
+}
+.video-buttons {
+}
+.progress {
+}
+.video__description {
+}
+.section.section-tickets {
+}
+.tickets__container {
+}
+.tickets-img {
+}
+.pay__container {
+}
+.ticket-type {
+}
+.checkmark {
+}
+.amount {
+}
+.number {
+}
+.section.section-contacts {
+}
+.contacts__container {
+}
+.contacts-list {
+}
+.contacts__img {
+}
+.footer__container {
+}
+.footer__icons {
+}
+.footer__list {
+}
+.footer-item {
+}
+.footer-icon {
+}
+
+
 
 
 
