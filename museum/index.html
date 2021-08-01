@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/svg/favicon.svg">
   <title>Museum</title>
 </head>
 <body>
@@ -18,15 +25,15 @@
         </div>
         <nav class="nav">
           <ul class="nav__list">
-            <li><a class="nav__item href="" class="nav__item">Visiting</a>
+            <li><a class="nav__item href="#visiting" class="nav__item">Visiting</a>
             </li>
-            <li><a class="nav__item href="" class="nav__item">Explore</a>
+            <li><a class="nav__item href="#explore" class="nav__item">Explore</a>
             </li>
-            <li><a class="nav__item href="" class="nav__item">Video</a>
+            <li><a class="nav__item href="#video" class="nav__item">Video</a>
             </li>
-            <li><a class="nav__item href="" class="nav__item">Tickets</a>
+            <li><a class="nav__item href="#tickets" class="nav__item">Tickets</a>
             </li>
-            <li><a class="nav__item href="" class="nav__item">Contacts</a>
+            <li><a class="nav__item href="#contacts" class="nav__item">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -35,7 +42,7 @@
   </header>
 
   <main>
-    <section class="welcome">
+    <section class="section section-welcome" id="welcom">
       <div class="container">
         <h2 class="section-title">Welcome <br> to the Louvre</h2>
         <h4 class="subtitle">From the castle to the museum</h4>
@@ -45,7 +52,7 @@
       </div>
     </section>
 
-    <section class="visiting">
+    <section class="section section-visiting" id="visiting">
       <div class="container">
         <h2 class="section-title title_underline title_colored">Virtual tour</h2>
         <div class="visiting__container">
@@ -115,12 +122,11 @@
                 </p>
               </div>
             </a>
-
         </div>
       </div>
     </section>
 
-    <section class="explore">
+    <section class="section section-explore" id="explore">
       <div class="container">
         <div class="explore__descriptuon">
           <h2 class="section-title title_underline">Picture explore</h2>
@@ -131,11 +137,10 @@
         <div class="explore__img">
           <img src="./assets/img/explore-bg.jpg" alt="artwork">
         </div>
-
       </div>
     </section>
 
-    <section class="video">
+    <section class="section section-video" id="video">
       <div class="container">
         <div class="video__player">
           <img src="./assets/img/video/video.jpg" alt="play">
@@ -176,50 +181,50 @@
       </div>
     </section>
 
-    <section class="tickets">
+    <section class="section section-tickets" id="tickets">
       <div class="container">
         <h2 class="section-title title_underline">Buy tickets</h2>
         <div class="tickets__container">
           <img src="./assets/img/tickets-bg.jpg" alt="artwork" class="tickets_img">
           <div class="pay__container">
-            <div class="ticket-type">
-              <h4 class="subtitle">Ticket Type</h4>
-              <label class="container">Permanent exhibition
-                <input type="radio" checked="checked" name="radio">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">Temporary exhibition
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>
-              </label>
-              <label class="container">Combined Admission
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>
-              </label>
-
-            </div>
-
-            <div class="amount">
-              <h4 class="subtitle">Amount</h4>
-              <label class="container">Basic 18+
-                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                <input type="number" min="0" max="20" value="1" readonly class="number">
-                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-              </label>
-              <label class="container">Senior 65+
-                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                <input type="number" min="0" max="20" value="1" readonly class="number">
-                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-              </label>
-              <h4 class="subtitle">Total € 220</h4>
-              <button type="submit">Buy Now</button>
-            </div>
+            <form action="#" method="get">
+              <div class="ticket-type">
+                <h4 class="subtitle">Ticket Type</h4>
+                <label class="container">Permanent exhibition
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Temporary exhibition
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Combined Admission
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="amount">
+                <h4 class="subtitle">Amount</h4>
+                <label class="container">Basic 18+
+                  <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                  <input type="number" min="0" max="20" value="1" readonly class="number">
+                  <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                </label>
+                <label class="container">Senior 65+
+                  <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                  <input type="number" min="0" max="20" value="1" readonly class="number">
+                  <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                </label>
+                <h4 class="subtitle">Total € 220</h4>
+                <button type="submit">Buy Now</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="section section-contacts" id="contacts">
       <div class="container">
         <div class="contacts__container">
           <h2 class="section-title title_underline">Contacts</h2>
@@ -247,23 +252,23 @@
     <div class="container">
       <div class="footer__container">
         <div class="logo">
-          <h1 class="logo__title">
+          <div class="logo__title">
             Louvre
-          </h1>
+          </div>
         </div>
         <nav class="nav">
           <ul class="nav__list">
-            <li><a class="nav__item href="" class="nav__item">Welcome</a>
+            <li><a class="nav__item href="#welcome" class="nav__item">Welcome</a>
             </li>
-            <li><a class="nav__item href="" class="nav__item">Visiting</a>
+            <li><a class="nav__item href="#visiting" class="nav__item">Visiting</a>
             </li>
-            <li><a class="nav__item href="" class="nav__item">Explore</a>
+            <li><a class="nav__item href="#explore" class="nav__item">Explore</a>
             </li>
-            <li><a class="nav__item href="" class="nav__item">Video</a>
+            <li><a class="nav__item href="#video" class="nav__item">Video</a>
             </li>
-            <li><a class="nav__item href="" class="nav__item">Tickets</a>
+            <li><a class="nav__item href="#tickets" class="nav__item">Tickets</a>
             </li>
-            <li><a class="nav__item href="" class="nav__item">Contacts</a>
+            <li><a class="nav__item href="#contacts" class="nav__item">Contacts</a>
             </li>
           </ul>
         </nav>
