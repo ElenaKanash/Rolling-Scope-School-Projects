@@ -83,7 +83,7 @@ body {
 
 .container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .header {
@@ -289,8 +289,6 @@ body {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #030303;
-  -webkit-transition: 0.35s linear;
-  transition: 0.35s linear;
   position: relative;
 }
 
@@ -302,6 +300,8 @@ body {
   height: 2px;
   width: 100px;
   background-color: #710707;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
 .visiting-subtittle:hover::after {
