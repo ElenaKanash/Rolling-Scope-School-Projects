@@ -274,11 +274,13 @@ body {
 
 .explore__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .explore__descriptuon {
-  max-width: 660px;
+  min-width: 660px;
+  margin-right: 60px;
 }
 
 .explore__text {
@@ -299,22 +301,72 @@ body {
   height: 700px;
 }
 
-
 .section-video {
   padding-top: 90px;
 }
+
 .video__player {
 }
+
+.video__container {
+  position: relative;
+  width: 1440px;
+  height: 629px;
+}
+
 .video-play {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left: -110px;
+  margin-top: -110px;
+  width: 220px;
+  height: 220px;
+  background-color: transparent;
 }
 .video__panel {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1440px;
+  height: 85px;
+  background-color: $color-dark;
 }
 .video-buttons {
+
+  width: 27px;
+  height: 30px;
+  background-color: transparent;
+
 }
-.progress {
+.progress1 {
+  width: 820px;
+  height: 15px;
+}
+
+.progress2 {
+
 }
 .video__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
+.video__title {
+}
+
+.video__text {
+  max-width: 720px;
+  margin-left: 114px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+
+
 .section.section-tickets {
 }
 .tickets__container {
