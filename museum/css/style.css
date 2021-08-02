@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.logo__title {
+.logo__title, .section-title {
   font-family: 'Forum', cursive;
 }
 
@@ -88,19 +88,10 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  width: calc(100% - 50px);
-}
-
-.logo__title {
-  padding-left: 70px;
-  font-size: 28px;
-  line-height: 50px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 .header {
+  width: 100%;
   min-height: 200px;
   padding: 74px 0 76px 0;
   background-color: #030303;
@@ -120,10 +111,16 @@ body {
 
 .logo__title {
   padding-left: 70px;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
   background-image: url(../assets/svg/logo.svg);
   background-repeat: no-repeat;
   background-position: 0 16px;
   background-size: 49px 26px;
+  padding-left: 70px;
 }
 
 .nav {
@@ -136,6 +133,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 720px;
 }
 
 .nav__list {
@@ -168,6 +166,69 @@ body {
 
 .nav-link:hover {
   color: #9D8665;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section {
+  padding: 75px 0;
+}
+
+.dark-section {
+  background-color: #030303;
+}
+
+.section-welcome {
+  min-height: 750px;
+  background-image: url(../assets/img/welcom-background.jpg);
+  background-position: calc(50% + 325px) 100%;
+  background-size: 1215px 750px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.section-title {
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subtitle {
+  margin: 26px 0 76px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.welcom__button {
+  width: 360px;
+  height: 75px;
+  background-color: #710707;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.welcom__button:hover {
+  background-color: #9D8665;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;

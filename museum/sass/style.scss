@@ -65,20 +65,10 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  width: calc(100% - 50px);
-}
-
-.logo__title {
-  padding-left: 70px;
-  @extend %font-forum;
-  font-size: 28px;
-  line-height: 50px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: $color-white;
 }
 
 .header {
+  width: 100%;
   min-height: 200px;
   padding: 74px 0 76px 0;
   background-color: $color-dark;
@@ -94,15 +84,24 @@ body {
 }
 .logo__title {
   padding-left: 70px;
+  @extend %font-forum;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $color-white;
   background-image: url(../assets/svg/logo.svg);
   background-repeat: no-repeat;
   background-position: 0 16px;
   background-size: 49px 26px;
+  padding-left: 70px;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 720px;
 
 }
 .nav__list {
@@ -117,7 +116,6 @@ body {
   }
   }
 
-
 .nav-link {
   font-weight: 100;
   font-size: 22px;
@@ -131,14 +129,64 @@ body {
   }
 }
 
-
-.section.section-welcome {
+.section {
+  padding: 75px 0;
 }
+
+.dark-section{
+  background-color: $color-dark;
+}
+
+.section-welcome {
+  min-height: 750px;
+  background-image:  url(../assets/img/welcom-background.jpg);
+  background-position: calc(50% + 325px) 100%;
+  background-size: 1215px 750px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
 .section-title {
+  @extend %font-forum;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.welcom__container{
+
 }
 .subtitle {
+  margin: 26px 0 76px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: $color-white;
 }
+
 .welcom__button {
+  width: 360px;
+  height: 75px;
+  background-color: $color-red;
+  border-radius: 10px;
+
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  color: $color-white;
+  &:hover {
+    background-color: $color-gold;
+    cursor: pointer;
+    transition: 0.5s;
+  }
 }
 .section.section-visiting {
 }
