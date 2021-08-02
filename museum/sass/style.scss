@@ -346,7 +346,8 @@ body {
 }
 
 .progress2 {
-
+  width: 155px;
+  height: 15px;
 }
 .video__description {
   display: flex;
@@ -365,15 +366,18 @@ body {
   line-height: 38px;
 }
 
-
-
-.section.section-tickets {
+.section-tickets {
 }
 .tickets__container {
+  display: flex;
+  justify-content: space-between;
 }
 .tickets-img {
+  width: 720px;
+  height: 550px;
 }
 .pay__container {
+
 }
 .ticket-type {
 }
@@ -383,13 +387,39 @@ body {
 }
 .number {
 }
-.section.section-contacts {
+.section-contacts {
 }
-.contacts__container {
+
+
+.contacts__container{
+  display: flex;
+  justify-content: space-between;
 }
+
+.contacts-info__container {
+  margin-right: 198px;
+}
+
+.contacts__subtitle {
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
 .contacts-list {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
 }
+
+.contacts-list a {
+  color: $color-dark;
+}
+
 .contacts__img {
+  width: 960px;
+  height: 620px;
 }
 .footer {
   min-height: 300px;
