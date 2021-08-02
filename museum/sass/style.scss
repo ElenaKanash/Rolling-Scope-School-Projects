@@ -1,0 +1,475 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+@mixin font($fz, $lh, $fw, $color){
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $color;
+}
+
+%font-forum {
+  font-family: 'Forum', cursive;
+}
+
+$color-dark: #030303;
+$color-red:  #710707;
+$color-gold: #9D8665;
+$color-gray: #464646;
+$color-white:#FFFFFF;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  min-height: 200px;
+  padding: 74px 0 76px 0;
+  background-color: $color-dark;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+
+}
+.logo__title {
+  padding-left: 70px;
+  font-family: 'Forum', cursive;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $color-white;
+  background-image: url(../assets/svg/logo.svg);
+  background-repeat: no-repeat;
+  background-position: 0 16px;
+  background-size: 49px 26px;
+  padding-left: 70px;
+  &:hover {
+    color: $color-gray;
+    fill: $color-red;
+  }
+  }
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 720px;
+
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  margin-right:76px;
+  &:last-child {
+    margin-right: 0;
+  }
+  }
+
+.nav-link {
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  &:hover {
+    color: $color-gold;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
+
+.section {
+  padding: 75px 0;
+}
+
+.dark-section {
+  background-color: $color-dark;
+}
+
+.section-title {
+  margin-bottom: 75px;
+  font-family: 'Forum', cursive;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.title_underline {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $color-red;
+  }
+}
+.title_colored {
+  color: $color-gold;
+}
+
+.section-welcome {
+  min-height: 750px;
+  background-image:  url(../assets/img/welcom-background.jpg);
+  background-position: calc(50% + 325px) 100%;
+  background-size: 1215px 750px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.welcom__container{
+
+}
+.subtitle {
+  margin: -50px 0 76px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: $color-white;
+}
+
+.welcom__button {
+  width: 360px;
+  height: 75px;
+  background-color: $color-red;
+  border-radius: 10px;
+
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  color: $color-white;
+  &:hover {
+    background-color: $color-gold;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
+.section-visiting {}
+
+.visiting__container {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 78px 60px;
+}
+
+.visiting__link {
+  display: block;
+
+}
+.visiting__card {
+  flex: 1 1 calc(100% / 3);
+
+
+}
+.visiting-image {
+  width: 440px;
+  height: 285px;
+  margin-bottom: 25px;
+}
+
+.visiting-subtittle {
+  font-family: 'Forum', cursive;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color:$color-dark;
+
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    height: 2px;
+    width: 100px;
+    background-color: $color-red;
+    transition: 0.5s linear;
+  }
+}
+.visiting-subtittle:hover::after {
+  width: 100%;
+}
+
+.visiting-text__container {
+  padding-top: 9px;
+}
+
+.visiting-text {
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  color:$color-dark;
+}
+
+.section-explore {
+}
+
+.explore__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.explore__descriptuon {
+  min-width: 660px;
+  margin-right: 60px;
+}
+
+.explore__text {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: $color-white;
+  padding-bottom: 25px;
+}
+
+.explore__span {
+  color: #9D8665;
+}
+
+.explore__img {
+  width: 720px;
+  height: 700px;
+}
+
+.section-video {
+  padding-top: 90px;
+}
+
+.video__player {
+}
+
+.video__container {
+  position: relative;
+  width: 1440px;
+  height: 629px;
+}
+
+.video-play {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left: -110px;
+  margin-top: -110px;
+  width: 220px;
+  height: 220px;
+  background-color: transparent;
+  &:hover {
+    cursor: pointer;
+    background-color: $color-dark
+  }
+}
+.video__panel {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1440px;
+  height: 85px;
+  background-color: $color-dark;
+}
+.video-buttons {
+  width: 27px;
+  height: 30px;
+  background-color: transparent;
+
+}
+.progress1 {
+  width: 820px;
+  height: 15px;
+}
+
+.progress2 {
+  width: 155px;
+  height: 15px;
+}
+.video__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.video__title {
+}
+
+.video__text {
+  max-width: 720px;
+  margin-left: 114px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.section-tickets {
+}
+.tickets__container {
+  display: flex;
+  justify-content: space-between;
+}
+.tickets-img {
+  width: 720px;
+  height: 550px;
+}
+.pay__container {
+
+}
+.ticket-type {
+}
+.checkmark {
+}
+.amount {
+}
+.number {
+}
+.section-contacts {
+}
+
+.contacts_block {
+  position: relative;
+  left: 38px;
+  bottom: 34px;
+
+}
+
+.contacts__container{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contacts-info__container {
+  margin-right: 198px;
+}
+
+.contacts__subtitle {
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.contacts-list {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.contacts-list a {
+  color: $color-dark;
+}
+
+.contacts__img {
+  width: 960px;
+  height: 620px;
+}
+.footer {
+  padding: 75px 0 75px 0;
+  min-height: 300px;
+  background-color: $color-dark;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  column-gap: 153px;
+
+}
+
+
+.footer__icons {
+
+}
+.footer__list {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-right:24px;
+}
+
+.footer__list a {
+  display: block;
+}
+
+.footer-item {
+}
+
+.footer-icon {
+  width: 48px;
+  height: 48px;
+}
