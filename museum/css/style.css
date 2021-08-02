@@ -73,10 +73,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.logo__title, .section-title, .visiting-subtittle {
-  font-family: 'Forum', cursive;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -111,6 +107,7 @@ body {
 
 .logo__title {
   padding-left: 70px;
+  font-family: 'Forum', cursive;
   font-size: 28px;
   line-height: 50px;
   letter-spacing: 5px;
@@ -186,6 +183,7 @@ body {
 
 .section-title {
   margin-bottom: 75px;
+  font-family: 'Forum', cursive;
   font-size: 80px;
   line-height: 90px;
   letter-spacing: 5px;
@@ -285,6 +283,7 @@ body {
 }
 
 .visiting-subtittle {
+  font-family: 'Forum', cursive;
   font-size: 32px;
   line-height: 35px;
   letter-spacing: 5px;
@@ -319,6 +318,36 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #030303;
+}
+
+.explore__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.explore__descriptuon {
+  max-width: 660px;
+}
+
+.explore__text {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+
+.explore__span {
+  color: #9D8665;
+}
+
+.explore__img {
+  margin-left: 61px;
+  width: 720px;
+  height: 700px;
 }
 
 .section-video {

@@ -84,7 +84,7 @@ body {
 }
 .logo__title {
   padding-left: 70px;
-  @extend %font-forum;
+  font-family: 'Forum', cursive;
   font-size: 28px;
   line-height: 50px;
   letter-spacing: 5px;
@@ -144,7 +144,7 @@ body {
 
 .section-title {
   margin-bottom: 75px;
-  @extend %font-forum;
+  font-family: 'Forum', cursive;
   font-size: 80px;
   line-height: 90px;
   letter-spacing: 5px;
@@ -235,7 +235,7 @@ body {
 }
 
 .visiting-subtittle {
-  @extend %font-forum;
+  font-family: 'Forum', cursive;
   font-size: 32px;
   line-height: 35px;
   letter-spacing: 5px;
@@ -257,8 +257,7 @@ body {
   width: 100%;
 }
 
-
-.visiting-text__container{
+.visiting-text__container {
   padding-top: 9px;
 }
 
@@ -269,13 +268,35 @@ body {
   line-height: 26px;
   color:$color-dark;
 }
-.section.section-explore {
+
+.section-explore {
 }
+
+.explore__container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .explore__descriptuon {
+  max-width: 660px;
 }
-.section-title.title_underline {
+
+.explore__text {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: $color-white;
+  padding-bottom: 25px;
 }
+
+.explore__span {
+  color: #9D8665;
+}
+
 .explore__img {
+  margin-left: 61px;
+  width: 720px;
+  height: 700px;
 }
 
 
