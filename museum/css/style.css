@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.logo__title, .section-title {
+.logo__title, .section-title, .visiting-subtittle {
   font-family: 'Forum', cursive;
 }
 
@@ -121,6 +121,11 @@ body {
   background-position: 0 16px;
   background-size: 49px 26px;
   padding-left: 70px;
+}
+
+.logo__title:hover {
+  color: #464646;
+  fill: #710707;
 }
 
 .nav {
@@ -179,6 +184,33 @@ body {
   background-color: #030303;
 }
 
+.section-title {
+  margin-bottom: 75px;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.title_underline {
+  position: relative;
+}
+
+.title_underline::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #710707;
+}
+
+.title_colored {
+  color: #9D8665;
+}
+
 .section-welcome {
   min-height: 750px;
   background-image: url(../assets/img/welcom-background.jpg);
@@ -188,16 +220,8 @@ body {
   background-position: 100% 100%;
 }
 
-.section-title {
-  font-size: 80px;
-  line-height: 90px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
 .subtitle {
-  margin: 26px 0 76px;
+  margin: -50px 0 76px;
   font-weight: 300;
   font-size: 28px;
   line-height: 33px;
@@ -232,6 +256,73 @@ body {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.visiting__container {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 78px 60px;
+}
+
+.visiting__link {
+  display: block;
+}
+
+.visiting__card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(100% / 3);
+          flex: 1 1 calc(100% / 3);
+}
+
+.visiting-image {
+  width: 440px;
+  height: 285px;
+  margin-bottom: 25px;
+}
+
+.visiting-subtittle {
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #030303;
+  -webkit-transition: 0.35s linear;
+  transition: 0.35s linear;
+  position: relative;
+}
+
+.visiting-subtittle::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  height: 2px;
+  width: 100px;
+  background-color: #710707;
+}
+
+.visiting-subtittle:hover::after {
+  width: 100%;
+}
+
+.visiting-text__container {
+  padding-top: 9px;
+}
+
+.visiting-text {
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  color: #030303;
+}
+
+.section-video {
+  padding-top: 90px;
 }
 
 .footer {
