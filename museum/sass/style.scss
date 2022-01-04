@@ -86,7 +86,7 @@ body {
   padding-left: 70px;
   font-family: 'Forum', cursive;
   font-size: 28px;
-  line-height: 50px;
+  line-height: 30px;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: $color-white;
@@ -94,7 +94,7 @@ body {
   background-repeat: no-repeat;
   background-position: 0 16px;
   background-size: 49px 26px;
-  padding-left: 70px;
+
   &:hover {
     color: $color-gray;
     fill: $color-red;
