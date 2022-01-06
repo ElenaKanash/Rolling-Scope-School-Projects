@@ -1,0 +1,20 @@
+@import 'null';
+@import 'variables';
+@import 'header';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans-serif;
+  color: $white-color;
+  //background-color: rgb(20, 19, 19);
+}
+
+.container{
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px;
+}

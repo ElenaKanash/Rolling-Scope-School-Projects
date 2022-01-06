@@ -12,13 +12,47 @@
 
   <link rel="shortcut icon" href="assets\svg\camera.svg" type="image/svg">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css\style.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-    </div> <!-- /.container -->
+  <header class="header container">
+    <div class="logo">
+      <a href="#" class="logo__link">
+        <img src="assets\svg\logo.svg" alt="logo" class="logo__img">
+      </a>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="skills" class="nav__link">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a href="portfolio" class="nav__link">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a href="video" class="nav__link">Video</a>
+        </li>
+        <li class="nav__item">
+          <a href="price" class="nav__link">Price</a>
+        </li>
+        <li class="nav__item">
+          <a href="contacts" class="nav__link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="switch">
+      <a href="#" class="switch__link">
+        <span class="switch__en">en</span>
+      </a>
+      <span class="switch__divider">/</span>
+      <a href="#" class="switch__link">
+        <span class="switch__ru">ru</span>
+      </a>
+
+    </div>
 
   </header>
 
@@ -28,23 +62,23 @@
         <h1 class="title">Alexa Rise</h1>
       </section>
 
-      <section class="section skills">
+      <section class="section skills" id="skills">
         <h2 class="section-title">Skills</h2>
       </section>
 
-      <section class="section portfolio">
+      <section class="section portfolio" id="portfolio">
         <h2 class="section-title">Portfolio</h2>
       </section>
 
-      <section class="section video">
+      <section class="section video" id="video">
         <h2 class="section-title">Video</h2>
       </section>
 
-      <section class="section price">
+      <section class="section price" id="price">
         <h2 class="section-title">Price</h2>
       </section>
 
-      <section class="section contacts">
+      <section class="section contacts" id="contacts">
         <h2 class="section-title">Contacts</h2>
       </section>
     </div> <!-- /.container -->
