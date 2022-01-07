@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.header {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +79,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #000000;
+  background-image: url("../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
   padding: 20px 0;
 }
 
@@ -160,6 +162,47 @@ h1, h2, h3, h4, h5, h6 {
   color: #BDAE82;
 }
 
+.hero-container {
+  min-height: 910px;
+  background-image: url("../assets/img/bg.jpg");
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  padding-top: 160px;
+  padding-left: 60px;
+}
+
+.hero__text {
+  max-width: 470px;
+}
+
+.title {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+  margin-bottom: 10px;
+}
+
+.hero__subscr {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 8px 73px;
+  background-color: #BDAE82;
+  border: 1px solid #BDAE82;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.btn:hover {
+  color: #FFFFFF;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -168,6 +211,7 @@ body {
   font-family: 'Merriweather', serif;
   font-family: 'Inter', sans-serif;
   color: #FFFFFF;
+  background-color: #000000;
 }
 
 .container {

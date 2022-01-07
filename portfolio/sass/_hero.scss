@@ -1,0 +1,25 @@
+.hero-container {
+  min-height: 910px;
+  background-image: url('../assets/img/bg.jpg');
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  padding-top: 160px;
+  padding-left: 60px;
+}
+
+.hero__text {
+  max-width: 470px;
+}
+.title {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+  margin-bottom: 10px;
+}
+
+.hero__subscr {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}

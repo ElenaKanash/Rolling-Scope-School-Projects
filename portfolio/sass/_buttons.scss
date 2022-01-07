@@ -1,0 +1,12 @@
+.btn {
+  padding: 8px 73px;
+  background-color: $gold-color;
+  border: 1px solid $gold-color;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: $bg-color;
+  &:hover {
+    color: $white-color;
+  }
+  }

@@ -1,9 +1,20 @@
 .header{
+
+
+}
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: $bg-color;
+  background-image: url('../assets/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center 0;
+
+
+  //background-color: $bg-color;
   padding: 20px 0;
+
+
 }
 
 .logo {
