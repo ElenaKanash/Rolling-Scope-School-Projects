@@ -3,6 +3,7 @@
 @import 'header';
 @import 'hero';
 @import 'buttons';
+@import 'skills-items';
 
 html {
   scroll-behavior: smooth;
@@ -13,7 +14,6 @@ body {
   font-family: 'Inter', sans-serif;
   color: $white-color;
   background-color: $bg-color;
-  //background-color: rgb(20, 19, 19);
 }
 
 .container{
@@ -21,3 +21,28 @@ body {
   margin: auto;
   padding: 0 20px;
 }
+
+.section {
+  padding-top: 100px;
+}
+
+.section-title {
+  width: 50%;
+  margin: auto;
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+  text-align: center;
+}
+.section-title__title {
+  display: inline-block;
+  padding: 0px 20px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: $gold-color;
+  background: $bg-color;
+  overflow: visible;
+}
+
