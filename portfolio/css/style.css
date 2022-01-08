@@ -69,6 +69,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.header {
+  background-image: url("../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,9 +85,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url("../assets/img/bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
   padding: 20px 0;
 }
 
@@ -168,11 +171,11 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center -90px;
   background-repeat: no-repeat;
   padding-top: 160px;
-  padding-left: 60px;
 }
 
 .hero__text {
   max-width: 470px;
+  margin-left: 60px;
 }
 
 .title {
