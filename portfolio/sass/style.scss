@@ -4,6 +4,8 @@
 @import 'hero';
 @import 'buttons';
 @import 'skills-items';
+@import 'cards';
+@import 'video';
 
 html {
   scroll-behavior: smooth;
@@ -31,6 +33,7 @@ body {
   margin: auto;
   background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
   text-align: center;
+  margin-bottom: 60px;
 }
 .section-title__title {
   display: inline-block;
@@ -45,4 +48,6 @@ body {
   background: $bg-color;
   overflow: visible;
 }
+
+
 

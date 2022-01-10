@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 8px 73px;
+  padding: 7px 73px;
   background-color: #BDAE82;
   border: 1px solid #BDAE82;
   font-size: 20px;
@@ -206,6 +206,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
+.btn--transparent {
+  background-color: transparent;
+  color: #BDAE82;
+  width: 220px;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .skills-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,7 +227,6 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 39px;
-  margin-top: 60px;
 }
 
 .skills-item {
@@ -258,6 +268,49 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 36px;
 }
 
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  max-width: 450px;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.video-player {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__play {
+  position: absolute;
+}
+
+.video__play:hover {
+  cursor: pointer;
+  -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -286,6 +339,7 @@ body {
   background-image: -o-linear-gradient(bottom, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
   background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .section-title__title {

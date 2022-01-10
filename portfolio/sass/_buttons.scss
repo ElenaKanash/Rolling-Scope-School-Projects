@@ -1,5 +1,5 @@
 .btn {
-  padding: 8px 73px;
+  padding: 7px 73px;
   background-color: $gold-color;
   border: 1px solid $gold-color;
   font-size: 20px;
@@ -10,3 +10,14 @@
     color: $white-color;
   }
   }
+
+  .btn--transparent {
+    background-color: transparent;
+    color: $gold-color;
+    width: 220px;
+  }
+
+.buttons {
+  text-align: center;
+  margin-bottom: 60px;
+}
