@@ -200,6 +200,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 40px;
   text-align: center;
   color: #000000;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .btn:hover {
@@ -303,6 +306,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .video__play {
   position: absolute;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .video__play:hover {
@@ -345,13 +351,12 @@ body {
 .section-title__title {
   display: inline-block;
   padding: 0px 20px;
+  text-align: center;
+  color: #BDAE82;
+  background: #000000;
   font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 80px;
-  text-align: center;
-  color: #BDAE82;
-  background: #000000;
-  overflow: visible;
 }
