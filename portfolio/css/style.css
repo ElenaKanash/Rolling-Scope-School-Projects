@@ -89,9 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .logo:hover {
@@ -121,9 +121,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 50px;
   color: #FFFFFF;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .nav__link:hover {
@@ -135,9 +135,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 50px;
   color: #BDAE82;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .switch__en:hover {
@@ -156,9 +156,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 50px;
   color: #FFFFFF;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .switch__ru:hover {
@@ -200,9 +200,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 40px;
   text-align: center;
   color: #000000;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .btn:hover {
@@ -306,9 +306,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .video__play {
   position: absolute;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .video__play:hover {

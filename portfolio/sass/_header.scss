@@ -12,7 +12,7 @@
 }
 
 .logo {
-  transition: .3s;
+  transition: all .3s;
   &:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
@@ -36,7 +36,7 @@
   font-size: 20px;
   line-height: 50px;
   color: $white-color;
-  transition: .3s;
+  transition: all .3s;
   &:hover {
     color: $gold-color;
   }
@@ -51,7 +51,7 @@
   font-size: 20px;
   line-height: 50px;
   color: $gold-color;
-  transition: .3s;
+  transition: all .3s;
   &:hover {
     color: $white-color;
   }
@@ -68,7 +68,7 @@
   font-size: 20px;
   line-height: 50px;
   color: $white-color;
-  transition: .3s;
+  transition: all .3s;
   &:hover {
     color: $gold-color;
   }
