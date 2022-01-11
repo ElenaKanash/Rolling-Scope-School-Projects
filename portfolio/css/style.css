@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 36px;
 }
 
-.cards {
+.cards-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,11 +283,11 @@ h1, h2, h3, h4, h5, h6 {
   gap: 25px;
 }
 
-.card {
+.card-portfolio {
   max-width: 450px;
 }
 
-.card__img {
+.card-portfolio__img {
   width: 100%;
 }
 

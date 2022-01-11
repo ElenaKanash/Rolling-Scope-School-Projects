@@ -1,13 +1,14 @@
-.cards {
+.cards-portfolio {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 25px;
 }
-.card {
+.card-portfolio {
   max-width: 450px;
 
 }
-.card__img {
+.card-portfolio__img {
   width: 100%;
 }
+
