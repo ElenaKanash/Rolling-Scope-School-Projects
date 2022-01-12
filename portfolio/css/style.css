@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
   width: 220px;
-  padding: 7px 72px;
+  padding: 7px 0px;
   background-color: #BDAE82;
   border: 1px solid #BDAE82;
   font-size: 20px;
@@ -331,6 +331,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 25px;
+  margin-bottom: 100px;
 }
 
 .price-card {
@@ -369,6 +370,48 @@ h1, h2, h3, h4, h5, h6 {
 
 .span-container {
   margin-bottom: 40px;
+}
+
+.section-contacts {
+  background-image: url(../assets/img/contacts-bg.jpg);
+  background-size: auto 700px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  padding-bottom: 195px;
+}
+
+.contact-form {
+  max-width: 450px;
+  margin-left: auto;
+}
+
+.contact-form__caption {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  color: #BDAE82;
+  margin-bottom: 40px;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 3px;
+  padding-left: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #BDAE82;
+  border-radius: 0px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.contact-form__textarea {
+  height: 100px;
+  margin-bottom: 30px;
 }
 
 html {
