@@ -304,8 +304,12 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
-.video__play {
+.video__btn {
   position: absolute;
+  background-color: transparent;
+}
+
+.video__play {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;

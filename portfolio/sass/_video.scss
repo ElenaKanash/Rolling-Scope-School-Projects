@@ -5,8 +5,13 @@
   align-items: center;
 }
 
-.video__play {
+.video__btn{
   position: absolute;
+  background-color: transparent;
+}
+
+.video__play {
+  //position: absolute;
   transition: all .3s;
   &:hover {
     cursor: pointer;
