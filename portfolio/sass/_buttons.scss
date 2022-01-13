@@ -1,0 +1,28 @@
+.btn {
+  width: 220px;
+  padding: 7px 0px;
+  background-color: $gold-color;
+  border: 1px solid $gold-color;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: $bg-color;
+  transition: all .3s;
+  &:hover {
+    color: $white-color;
+  }
+  }
+
+  .btn--transparent {
+    background-color: transparent;
+    color: $gold-color;
+  }
+
+  .btn--price {
+    padding: 7px 37px;
+  }
+
+.buttons {
+  text-align: center;
+  margin-bottom: 60px;
+}

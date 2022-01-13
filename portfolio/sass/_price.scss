@@ -1,0 +1,45 @@
+.price-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 100px;
+}
+
+.price-card {
+  max-width: 450px;
+  border: 1px solid $gold-color;
+  padding: 42px 113px;
+}
+
+.price-card__title {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 56px;
+  text-align: center;
+  color: $gold-color;
+  margin-bottom: 20px;
+}
+
+.price-card__price {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: $gold-color;
+  margin-bottom: 20px;
+}
+
+.price-card__span {
+  display: block;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: $white-color;
+}
+
+.span-container {
+  margin-bottom: 40px;
+}

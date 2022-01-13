@@ -1,0 +1,21 @@
+.video-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__btn{
+  position: absolute;
+  background-color: transparent;
+}
+
+.video__play {
+  //position: absolute;
+  transition: all .3s;
+  &:hover {
+    cursor: pointer;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+}

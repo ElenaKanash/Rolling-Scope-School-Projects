@@ -1,0 +1,50 @@
+
+.footer{
+  background-color: $bg-color;
+  font-size: 20px;
+  line-height: 50px;
+  color: $white-color;
+}
+
+.footer a {
+  color: $white-color;
+  transition: all 0.3s;
+  &:hover {
+    color: $gold-color;
+  }
+}
+
+.footer-container {
+  display: flex;;
+  align-items: center;;
+  justify-content: space-between;
+  padding: 48px  0px;
+}
+
+.data{
+  display: flex;;
+  align-items: center;;
+  justify-content: space-between;
+  gap: 21px;
+}
+
+.githhub-link {
+  margin-right: 20px;
+}
+
+.social-link {
+  display: flex;;
+  align-items: center;;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.social-link__img {
+  margin-top: 5px;
+  transition: all .3s;
+  &:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+}
+

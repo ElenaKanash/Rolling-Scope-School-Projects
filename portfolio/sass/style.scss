@@ -1,0 +1,58 @@
+@import 'null';
+@import 'variables';
+@import 'header';
+@import 'hero';
+@import 'buttons';
+@import 'skills-items';
+@import 'portfolio-cards';
+@import 'video';
+@import 'price';
+@import 'contact';
+@import 'footer';
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans-serif;
+  color: $white-color;
+  background-color: $bg-color;
+}
+
+.container{
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+.section-title {
+  width: 50%;
+  margin: auto;
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title__title {
+  display: inline-block;
+  padding: 0px 20px;
+  text-align: center;
+  color: $gold-color;
+  background: $bg-color;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+}
+
+
+
+
+
