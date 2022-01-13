@@ -140,10 +140,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all .3s;
 }
 
-.switch__en:hover {
-  color: #FFFFFF;
-}
-
 .switch__divider {
   padding: 0 4px;
   font-weight: bold;
@@ -412,6 +408,79 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form__textarea {
   height: 100px;
   margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #000000;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.footer a {
+  color: #FFFFFF;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer a:hover {
+  color: #BDAE82;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 48px  0px;
+}
+
+.data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 21px;
+}
+
+.githhub-link {
+  margin-right: 20px;
+}
+
+.social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.social-link__img {
+  margin-top: 5px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.social-link__img:hover {
+  -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 html {
