@@ -16,45 +16,50 @@
 </head>
 
 <body>
-  <header class="header container">
-    <div class="header-container">
-      <div class="logo">
-        <a href="#" class="logo__link">
-          <img src="assets/svg/logo.svg" alt="logo" class="logo__img">
-        </a>
+  <header class="header">
+    <div class="container">
+
+      <div class="header-container">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="assets/svg/logo.svg" alt="logo" class="logo__img">
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#video" class="nav__link">Video</a>
+            </li>
+            <li class="nav__item">
+              <a href="#price" class="nav__link">Price</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="switch">
+          <a href="#" class="switch__link">
+            <span class="switch__en">en</span>
+          </a>
+          <span class="switch__divider">/</span>
+          <a href="#" class="switch__link">
+            <span class="switch__ru">ru</span>
+          </a>
+
+        </div>
       </div>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">Skills</a>
-          </li>
-          <li class="nav__item">
-            <a href="#portfolio" class="nav__link">Portfolio</a>
-          </li>
-          <li class="nav__item">
-            <a href="#video" class="nav__link">Video</a>
-          </li>
-          <li class="nav__item">
-            <a href="#price" class="nav__link">Price</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contacts" class="nav__link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+    </div><!-- /.container -->
 
-      <div class="switch">
-        <a href="#" class="switch__link">
-          <span class="switch__en">en</span>
-        </a>
-        <span class="switch__divider">/</span>
-        <a href="#" class="switch__link">
-          <span class="switch__ru">ru</span>
-        </a>
-
-      </div>
-    </div>
 
   </header>
 
@@ -224,7 +229,7 @@
           <input class="contact-form__input" type="email" name="email"  required="required" placeholder="E-mail">
           <input class="contact-form__input" type="tel" name="tel"  required="required" placeholder="Phone">
           <textarea class="contact-form__textarea" name="message" placeholder="Message"></textarea>
-          <button class="btn" type="submit">Send message</button>
+          <button class="btn btn--form" type="submit">Send message</button>
 
         </form>
       </div>

@@ -26,6 +26,9 @@ body {
   max-width: 1440px;
   margin: auto;
   padding: 0 20px;
+  @include large-scrin {
+    width: calc(100% - 40px);
+  }
 }
 
 .section {

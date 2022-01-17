@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   gap: 39px;
   //margin-top: 60px;
+  @include large-scrin {
+    justify-content: space-around;
+    width: 50%
+  }
 }
 
 .skills-item {
@@ -14,6 +18,7 @@
   background-position: center top;
   background-size: 62px 50px;
   padding: 0 20px 8px 20px;
+
 }
 
 .skills-item:nth-child(1) {
