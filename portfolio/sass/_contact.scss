@@ -34,6 +34,9 @@
   font-size: 20px;
   line-height: 40px;
   color: $white-color;
+  &:focus {
+    border-color: $white-color;
+  }
 }
 .contact-form__textarea {
   height: 100px;
