@@ -31,8 +31,18 @@ body {
   }
 }
 
+.video-container{
+  @include medium-scrin {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
 .section {
   padding-top: 100px;
+  @include medium-scrin {
+    padding-top: 80px;
+  }
 }
 
 .section-title {
@@ -41,6 +51,10 @@ body {
   background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
   text-align: center;
   margin-bottom: 60px;
+  @include medium-scrin {
+    margin-bottom: 50px;
+    width: calc(50% + 20px);
+  }
 }
 .section-title__title {
   display: inline-block;
@@ -53,6 +67,10 @@ body {
   font-weight: bold;
   font-size: 40px;
   line-height: 80px;
+  @include medium-scrin {
+    font-size: 32px;
+    line-height: 80px;
+  }
 }
 
 

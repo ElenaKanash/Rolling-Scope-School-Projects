@@ -4,12 +4,28 @@
   flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 100px;
+
+  @include large-scrin {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 49px;
+  }
+
+  @include medium-scrin {
+    justify-content: space-around;
+  }
 }
 
 .price-card {
   max-width: 450px;
   border: 1px solid $gold-color;
-  padding: 42px 113px;
+  padding: 43px 113px;
+
+  @include medium-scrin {
+    max-width: 420px;
+    padding: 42px 98px;
+  }
 }
 
 .price-card__title {

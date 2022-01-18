@@ -1,13 +1,24 @@
+
 .video-player {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    width: 100%;
+    @include medium-scrin {
+      min-height: 418px;
+    }
+  }
 }
 
 .video__btn{
   position: absolute;
   background-color: transparent;
+  @include medium-scrin {
+    width: 63px;
+  }
 }
 
 .video__play {
