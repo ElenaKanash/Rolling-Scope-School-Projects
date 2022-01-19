@@ -32,6 +32,7 @@
 .buttons {
   text-align: center;
   margin-bottom: 60px;
+
   @include large-scrin {
     display: flex;
     flex-wrap: wrap;
@@ -40,11 +41,17 @@
     width: 445px;
     margin: auto;
     margin-bottom: 60px;
-
   }
   .btn {
     @include large-scrin {
       width: calc(50% - 5px);
     }
+  }
+
+  @include small-scrin {
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+    width: 100%;
   }
 }

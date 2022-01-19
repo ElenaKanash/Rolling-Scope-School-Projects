@@ -13,3 +13,9 @@ $white-color: #FFFFFF;
     @content;
   }
 }
+
+@mixin small-scrin () {
+  @media (max-width: 576px) {
+    @content;
+  }
+}

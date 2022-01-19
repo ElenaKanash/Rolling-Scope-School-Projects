@@ -26,6 +26,11 @@
     max-width: 420px;
     padding: 42px 98px;
   }
+
+  @include small-scrin {
+    max-width: 320px;
+    padding: 25px 15px;
+  }
 }
 
 .price-card__title {
@@ -34,7 +39,7 @@
   font-size: 28px;
   line-height: 56px;
   text-align: center;
-  color: $gold-color;
+  color: $white-color;
   margin-bottom: 20px;
 }
 
