@@ -1,1 +1,2 @@
-console.log(`Самооценка: 100 баллов. Выполнены все требования. Спасибо за проверку и удачи в учебе!`)
+const burger = document.querySelector('.burger');
+console.log(burger)

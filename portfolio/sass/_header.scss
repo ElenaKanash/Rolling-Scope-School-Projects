@@ -14,6 +14,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  @include medium-scrin {
+    padding: 20px 20px;
+    overflow-x: hidden;
+  }
 }
 
 .logo {
@@ -26,17 +30,44 @@
 
 .nav {
   margin-left: auto;
+  @include medium-scrin {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 620px;
+    //height: 1024px;
+    height: 100%;
+    background-color: $bg-color;
+    z-index: 5;
+    padding-top: 134px;
+    padding-left: 137px;
+    transform: translateX(100%);
+    transition: .3s all linear;
+  }
+}
+
+.nav_active {
+  transform: translateX(0);
 }
 
 .nav__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include medium-scrin{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
+.nav__item {
+  padding-right: 31px;
+  @include medium-scrin {
+    //width: 100%;
+  }
 }
 
 .nav__link {
-  padding-right: 31px;
   font-family: Inter;
   font-size: 20px;
   line-height: 50px;
@@ -45,10 +76,16 @@
   &:hover {
     color: $gold-color;
   }
+  @include medium-scrin {
+    font-size: 34px;
+    line-height: 73px;
+  }
 }
 
 .switch {
-  //width: 70px;
+  @include medium-scrin {
+    margin-left: auto;
+  }
 }
 
 .switch__en {
