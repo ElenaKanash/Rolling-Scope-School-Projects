@@ -75,6 +75,13 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center 0;
 }
 
+@media (max-width: 769px) {
+  .header {
+    background-position: -5px -30px;
+    background-size: auto 620px;
+  }
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -746,6 +753,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 20px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-left: 15px;
   }
 }
 
