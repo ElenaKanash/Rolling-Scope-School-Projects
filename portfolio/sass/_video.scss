@@ -1,17 +1,30 @@
+.video {
+  background-image: url('../assets/img/video-player.jpg');
+  background-position: 20px 240px;
+  background-repeat: no-repeat;
 
+  @include medium-scrin {
+    background-position: -5px 210px;
+    background-size: auto 418px;
+  }
+}
 .video-player {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  img {
-    width: 100%;
-    @include medium-scrin {
-      min-height: 418px;
-    }
+  min-height: 705px;
+  @include medium-scrin {
+    min-height: 418px;
   }
 }
+
+/* img {
+  width: 100%;
+  @include medium-scrin {
+    min-height: 418px;
+  }
+} */
 
 .video__btn{
   position: absolute;
@@ -22,6 +35,10 @@
 }
 
 .video__play {
+  width: 100%;
+  @include medium-scrin {
+    min-height: 418px;
+  }
   //position: absolute;
   transition: all .3s;
   &:hover {
