@@ -44,6 +44,10 @@
     transform: translateX(100%);
     transition: .3s all linear;
   }
+  @include small-scrin {
+    width: 80%;
+    padding-left: 40px;
+  }
 }
 
 .nav_active {

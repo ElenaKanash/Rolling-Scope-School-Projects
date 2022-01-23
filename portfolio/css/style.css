@@ -137,6 +137,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 576px) {
+  .nav {
+    width: 80%;
+    padding-left: 40px;
+  }
+}
+
 .nav_active {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
