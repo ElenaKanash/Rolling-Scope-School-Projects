@@ -1,9 +1,28 @@
+.skills {
+  padding-bottom: 40px;
+  @include small-scrin {
+    padding-bottom: 0px;
+  }
+  }
+
 .skills-items {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 39px;
   //margin-top: 60px;
+  @include large-scrin {
+    flex: 50%;
+    justify-content: center;
+    //row-gap: 36px;
+    column-gap: 44px;
+    }
+  @include medium-scrin {
+    margin-top: -7px;
+    justify-content: space-around;
+    column-gap: 0px;
+
+  }
 }
 
 .skills-item {
@@ -14,6 +33,14 @@
   background-position: center top;
   background-size: 62px 50px;
   padding: 0 20px 8px 20px;
+  @include large-scrin {
+    max-width: calc(50%-44px);
+    }
+  @include medium-scrin {
+    max-width: 300px;
+    padding: 0 10px 40px 10px;
+  }
+
 }
 
 .skills-item:nth-child(1) {
@@ -31,14 +58,21 @@
 
 .skills-item__title {
   margin-top: 100px;
-
   font-weight: bold;
   font-size: 20px;
   line-height: 40px;
+  @include medium-scrin {
+    margin-top: 80px;
+  }
 }
 
 .skills-item__subscr {
   margin-top: 20px;
   font-size: 18px;
   line-height: 36px;
+  @include medium-scrin {
+    margin-top: 20px;
+    font-size: 18px;
+  line-height: 22px;
+  }
 }
