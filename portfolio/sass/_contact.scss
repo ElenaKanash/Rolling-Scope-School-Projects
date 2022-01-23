@@ -6,11 +6,18 @@
   //min-height: 700px;
   padding-top: 60px;
   padding-bottom: 195px;
+  @include medium-scrin {
+    height: 600px;
+    background-size: auto 600px;
+  }
 }
 
 .contact-form {
   max-width: 450px;
   margin-left: auto;
+  @include medium-scrin {
+    margin: auto;
+  }
   }
 
 .contact-form__caption {
@@ -20,6 +27,11 @@
   line-height: 80px;
   color: $gold-color;
   margin-bottom: 40px;
+  @include medium-scrin {
+    text-align: center;
+    font-size: 32px;
+    line-height: 64px;
+    }
 }
 
 .contact-form__input,

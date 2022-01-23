@@ -3,10 +3,17 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 25px;
+  @include large-scrin {
+    justify-content: center;
+  }
+
+  @include medium-scrin {
+    justify-content: space-around;
+    gap: 25px;
+  }
 }
 .card-portfolio {
   max-width: 450px;
-
 }
 .card-portfolio__img {
   width: 100%;

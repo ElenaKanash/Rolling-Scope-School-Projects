@@ -4,6 +4,10 @@
   font-size: 20px;
   line-height: 50px;
   color: $white-color;
+  @include medium-scrin {
+    height: 190px;
+    line-height: 24px;
+  }
 }
 
 .footer a {
@@ -15,17 +19,32 @@
 }
 
 .footer-container {
-  display: flex;;
-  align-items: center;;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 48px  0px;
+  @include medium-scrin {
+    //height: 190px;
+    flex-direction: column;
+    padding: 28px 0px;
+    line-height: 24px;
+    align-items: center;
+    //justify-content: space-between;
+    row-gap: 21px;
+    align-content: space-between;
+  }
 }
 
 .data{
-  display: flex;;
-  align-items: center;;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 21px;
+  @include medium-scrin {
+    gap: 20px;
+    justify-content: space-around;
+    margin-left: 15px;
+  }
 }
 
 .githhub-link {
@@ -33,8 +52,8 @@
 }
 
 .social-link {
-  display: flex;;
-  align-items: center;;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
@@ -46,5 +65,9 @@
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
   }
+  @include medium-scrin {
+    margin-top: 0;
+  }
 }
+
 
