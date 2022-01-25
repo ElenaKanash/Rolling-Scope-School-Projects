@@ -2,9 +2,12 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector('.nav');
 const menuClose = document.querySelector ('.nav-close');
 
+const portfolioBtns = document.querySelector('.portfolio-btns');
+const portfolioBtn = document.querySelectorAll('.portfolio-btn');
+const portfolioImages = document.querySelectorAll('.card-portfolio__img');
 
 
-
+// burger navigation in header
 burger.addEventListener('click', () => {
   menu.classList.add('nav_active');
 });
@@ -21,6 +24,22 @@ function closeMenu(event) {
   }
 }
 
+// Changing Images in the Portfolio Section
+portfolioBtns.addEventListener ('click', changeImage);
+
+function changeImage () {
+  //change color of button
+  portfolioBtn.forEach(el => el.classList.add('btn--transparent'));
+  event.target.classList.toggle('btn--transparent');
+
+  //change img
+  let currentBtn = event.target.dataset.season;
+
+  portfolioImages.forEach((img, index) =>
+      img.src = `./assets/img/${currentBtn}/${index + 1}.jpg`);
+}
+
+//Image caching
 
 
 
@@ -29,5 +48,7 @@ function closeMenu(event) {
 
 
 
-//console.log(1)
+
+
+
 
