@@ -40,6 +40,18 @@ function changeImage () {
 }
 
 //Image caching
+function preloadSummerImages() {
+  const seasons = ['winter', 'spring', 'summer', 'autumn'];
+  seasons.forEach(el => {
+    for(let i = 1; i <= 6; i++) {
+      const img = new Image();
+      img.src = `./assets/img/${el}/${i}.jpg`;
+    }
+  } )
+}
+preloadSummerImages();
+
+
 
 
 
