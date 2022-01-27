@@ -5,8 +5,13 @@ const menuClose = document.querySelector ('.nav-close');
 const portfolioBtns = document.querySelector('.portfolio-btns');
 const portfolioBtn = document.querySelectorAll('.portfolio-btn');
 const portfolioImages = document.querySelectorAll('.card-portfolio__img');
+const lang = document.querySelectorAll('[data-i18]');
+const ru = document.querySelector('.switch__ru');
+const en = document.querySelector('.switch__en');
+const switchBtns = document.querySelectorAll('.switch__btn');
+const switchBtn = document.querySelector('.switch');
 
-//translate 
+//to translate
 const i18Obj = {
   'en': {
     'skills': 'Skills',
@@ -123,14 +128,12 @@ function closeMenu(event) {
 // Changing Images in the Portfolio Section
 portfolioBtns.addEventListener ('click', changeImage);
 
-function changeImage () {
+function changeImage (el) {
   //change color of button
   portfolioBtn.forEach(el => el.classList.add('btn--transparent'));
   event.target.classList.toggle('btn--transparent');
-
   //change img
   let currentBtn = event.target.dataset.season;
-
   portfolioImages.forEach((img, index) =>
       img.src = `./assets/img/${currentBtn}/${index + 1}.jpg`);
 }
@@ -143,9 +146,35 @@ function preloadSummerImages() {
       const img = new Image();
       img.src = `./assets/img/${el}/${i}.jpg`;
     }
-  } )
+  } );
 }
 preloadSummerImages();
+
+// Translation of the page into two languages
+switchBtn.addEventListener('click', changeClassActive);
+ru.addEventListener('click', getTranslateToRu);
+en.addEventListener('click', getTranslateToEn);
+
+function changeClassActive (el) {
+  switchBtns.forEach (el => {
+    el.classList.remove('active');
+  });
+  event.target.classList.add('active');
+}
+
+function getTranslateToRu (ru) {
+  lang.forEach(el => {
+  el.textContent = i18Obj['ru'][el.dataset.i18]
+  });
+}
+
+function getTranslateToEn (en) {
+  lang.forEach(el => {
+  el.textContent = i18Obj['en'][el.dataset.i18]
+  });
+}
+
+
 
 
 

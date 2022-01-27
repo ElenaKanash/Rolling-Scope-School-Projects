@@ -92,11 +92,29 @@
   }
 }
 
+
+
+.switch__btn {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  color: $white-color;
+  transition: all .3s;
+  &:hover {
+    color: $gold-color;
+  }
+}
+
+.switch__btn.active {
+  color: $gold-color;
+}
+
 .switch__en {
   font-weight: bold;
   font-size: 20px;
   line-height: 50px;
-  color: $gold-color;
+  //color: $gold-color;
+  color: $white-color;
   transition: all .3s;
   &:hover {
     //color: $white-color;
