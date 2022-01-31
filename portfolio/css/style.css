@@ -682,8 +682,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .price-card {
   max-width: 450px;
+  text-align: center;
   border: 1px solid #BDAE82;
-  padding: 43px 103px;
+  padding: 43px 83px;
 }
 
 @media (max-width: 769px) {
