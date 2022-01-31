@@ -18,10 +18,10 @@
 }
 
 .price-card {
-  max-width: 450px;
+  width: 450px;
   text-align: center;
   border: 1px solid $gold-color;
-  padding: 43px 83px;
+  padding: 43px 88px;
 
   @include medium-scrin {
     max-width: 420px;
