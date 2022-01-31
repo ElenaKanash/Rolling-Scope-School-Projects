@@ -683,13 +683,13 @@ h1, h2, h3, h4, h5, h6 {
 .price-card {
   max-width: 450px;
   border: 1px solid #BDAE82;
-  padding: 43px 113px;
+  padding: 43px 103px;
 }
 
 @media (max-width: 769px) {
   .price-card {
     max-width: 420px;
-    padding: 42px 98px;
+    padding: 42px 88px;
   }
 }
 
