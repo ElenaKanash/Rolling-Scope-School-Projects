@@ -233,6 +233,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: all .3s;
 }
 
+.switch__en:hover {
+  cursor: pointer;
+}
+
 .switch__divider {
   padding: 0 4px;
   font-weight: bold;
@@ -251,7 +255,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .switch__ru:hover {
+  cursor: pointer;
   color: #BDAE82;
+}
+
+.theme-switch.light {
+  background-image: url("../assets/svg/sun.svg");
+}
+
+.theme-switch {
+  background-image: url("../assets/svg/moon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  margin-left: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.theme-switch:hover {
+  -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  cursor: pointer;
 }
 
 .hero-container {
@@ -628,7 +656,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 25px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 1439px) {
@@ -640,7 +668,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     gap: 49px;
   }
 }
@@ -953,6 +981,46 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: translateY(-50%) rotate(-45deg);
         -ms-transform: translateY(-50%) rotate(-45deg);
             transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+.skills.light,
+.portfolio.light,
+.video.light,
+.price.light {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.section-title.light {
+  background-color: #FFFFFF;
+  background-image: -webkit-linear-gradient(bottom, #fff 39px, #000 39px, #fff 41px, #fff 41px);
+  background-image: -o-linear-gradient(bottom, #fff 39px, #000 39px, #fff 41px, #fff 41px);
+  background-image: linear-gradient(to top, #fff 39px, #000 39px, #fff 41px, #fff 41px);
+}
+
+.section-title__title.light {
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.price-card__title.light {
+  color: #000000;
+}
+
+.price-card__span.light {
+  color: #000000;
+}
+
+@media (max-width: 769px) {
+  .nav.light {
+    background-color: #FFFFFF;
+  }
+  .nav__link.light {
+    color: #000000;
+  }
+  .nav-close__line.light {
+    background-color: #000000;
   }
 }
 

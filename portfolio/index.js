@@ -174,6 +174,25 @@ function getTranslateToEn (en) {
   });
 }
 
+// change color of the theme
+const coloredElem = document.querySelectorAll([
+  '.skills',
+  '.portfolio',
+  '.video',
+  '.price', '.price-card__title',
+  '.section-title', '.section-title__title','.span-container', '.price-card__span',
+  '.nav', '.nav__link ', '.nav-close__line ' ]);
+
+const themeSwitch = document.querySelector('.theme-switch ');
+
+themeSwitch.addEventListener('click', changeTheme);
+
+function changeTheme () {
+  themeSwitch.classList.toggle('light');
+  coloredElem.forEach((el) => {el.classList.toggle('light') });
+}
+
+
 
 
 
