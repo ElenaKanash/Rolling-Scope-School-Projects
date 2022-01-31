@@ -3,12 +3,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 25px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 
   @include large-scrin {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     gap: 49px;
   }
 
@@ -18,13 +18,14 @@
 }
 
 .price-card {
-  max-width: 450px;
+  width: 450px;
+  text-align: center;
   border: 1px solid $gold-color;
-  padding: 43px 113px;
+  padding: 43px 88px;
 
   @include medium-scrin {
     max-width: 420px;
-    padding: 42px 98px;
+    padding: 42px 88px;
   }
 
   @include small-scrin {
