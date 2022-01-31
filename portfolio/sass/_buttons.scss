@@ -18,6 +18,11 @@
     color: $gold-color;
   }
 
+.portfolio-btn.active{
+  background-color: $gold-color;
+  color: #000;
+}
+
   .btn--price {
     padding: 7px 37px;
   }
