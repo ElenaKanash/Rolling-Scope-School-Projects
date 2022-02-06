@@ -10,6 +10,10 @@
   outline: none;
 }
 
+a:focus, a:active {
+  outline: none;
+}
+
 nav, footer, header, aside {
   display: block;
 }
@@ -50,6 +54,131 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.container{
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: auto;
+
+}
+
+.header {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+}
+.logo__img {
+  transition: all .3s;
+  width: 100%;
+}
+.logo__img:hover {
+  cursor: pointer;
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.logo__img.active {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 40px;
+  transition: all .3s;
+}
+
+.nav__item:hover {
+  cursor: pointer;
+  color:  #BDAE82;
+}
+
+.nav__item.active {
+  color:  #BDAE82;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 120px);
+  background-image: url(./assets/img/forest.jpg);
+  background-size: cover;
+}
+
+.button {
+  width: 160px;
+  height: 160px;
+  background-image: url(./assets/svg/play.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color: transparent;
+  transition: .3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  filter: invert(6%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(32%) contrast(87%);
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+.footer__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__item {
+  margin-left: 40px;
+}
+
+  .footer__item-link{
+    color: white;
+  }
+
+.footer__item-link:hover {
+  cursor: pointer;
+  color: #BDAE82;
+}
+
+.footer__link {
+  width: 135px;
+  height: 50px;
+}
+
+.footer__link-img {
+  width: 100%;
 }
 
 
