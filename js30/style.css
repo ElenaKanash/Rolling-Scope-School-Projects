@@ -85,6 +85,8 @@ body {
 .logo {
   width: 50px;
 }
+
+
 .logo__img {
   transition: all .3s;
   width: 100%;
@@ -97,7 +99,6 @@ body {
 .logo__img.active {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
-
 
 .nav__list {
   display: flex;
@@ -144,7 +145,7 @@ body {
   filter: invert(6%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(32%) contrast(87%);
 }
 
-.pause{
+.pause {
   background-image: url(./assets/svg/pause.svg);
 }
 
