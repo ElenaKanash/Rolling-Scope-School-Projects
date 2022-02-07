@@ -144,6 +144,10 @@ body {
   filter: invert(6%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(32%) contrast(87%);
 }
 
+.pause{
+  background-image: url(./assets/svg/pause.svg);
+}
+
 .footer {
   width: 100%;
   background-color: black;
