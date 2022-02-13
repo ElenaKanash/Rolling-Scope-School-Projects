@@ -26,8 +26,8 @@
 
         <h1 class="title">Unsplash API</h1>
         <div class="search__wrapper">
-          <form action="" class="form-search" method="get">
-            <input class="input" type="search" placeholder="Search..." value="">
+          <form action="" class="form-search" method="get" autocomplete="off">
+            <input class="input" type="search" placeholder="Search..." value="" autocomplete="off" autofocus>
             <i class="fa fa-search" aria-hidden="true"></i>
 
           </form>
@@ -41,8 +41,12 @@
 
   <main class="main">
     <div class="container">
-      <div class="image__item">
-        <img src="" alt="foto" class="img">
+
+      <div class="image__items">
+        <div class="img__item">
+          <img class="img" src="/assets/photo.jpg" alt="foto" >
+        </div>
+
       </div>
 
     </div>
