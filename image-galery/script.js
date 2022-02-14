@@ -1,5 +1,5 @@
 const img = document.querySelector('.img');
-let url = 'https://api.unsplash.com/search/photos?query=winter&per_page=6&orientation=landscape&client_id=pakF7ID8qJ1KmpCgkfsCXoxnIGTgrxlK_bmDhJSJ4sk';
+let url = 'https://api.unsplash.com/search/photos?query=winter&per_page=11&orientation=landscape&client_id=pakF7ID8qJ1KmpCgkfsCXoxnIGTgrxlK_bmDhJSJ4sk';
 
 
 async function getData() {
