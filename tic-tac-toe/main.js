@@ -5,6 +5,7 @@ let result = '';
 const victory = document.querySelector('.winner');
 const winnerCount = document.querySelector('.winnerCount');
 const btn = document.querySelector('.btn');
+const mute = document.querySelector('.mute');
 
 area.addEventListener ('click', e => {
 //  console.log(e.target)
@@ -62,3 +63,25 @@ btn.addEventListener('click', () => {
   location.reload();
 })
 
+const audio = new Audio();
+let isPlay = false;
+
+
+function playAudio() {
+  if (!isPlay) {
+    audio.src = './assets/sound.mp3';
+    audio.currentTime = 0;
+    audio.play();
+    isPlay = true;
+  } else {
+    mute.src = './assets/play.png';
+    audio.pause();
+    isPlay = false;
+  }
+}
+
+function changeImage() {
+  mute.src = './assets/play.png';
+}
+
+mute.addEventListener('click', playAudio)

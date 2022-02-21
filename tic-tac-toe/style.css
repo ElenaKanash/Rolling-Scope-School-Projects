@@ -66,7 +66,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .mute {
@@ -110,13 +110,13 @@ body {
 
 .winner {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 40px;
 }
 
 .winnerCount {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 32px;
 }
 
