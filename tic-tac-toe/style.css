@@ -57,7 +57,8 @@ body {
 .main {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: calc(100vh - 50px);
   margin-top: -80px;
@@ -65,12 +66,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  padding-bottom: 40px;
 }
 
 .mute {
   position: fixed;
   top: 10%;
-  right: 10%;
+  right: 5%;
 }
 .mute__img {
   cursor: pointer;
@@ -82,8 +84,9 @@ body {
   align-items: center;
   align-content: center; */
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  /* margin: auto; */
   width: 330px;
   height: 330px;
   background-color: transparent;
@@ -99,6 +102,29 @@ body {
   font-size: 32px;
   cursor: pointer;
 }
+
+.winner {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.btn {
+  width: 250px;
+  border-radius: 20%;
+  padding: 5px 20px;
+  font-size: 28px;
+  line-height: 38px;
+  color: #00030F;
+  background-color: #AF9DAF;
+  border: 1px solid white;
+}
+.btn:hover {
+  background-color: #948395;
+  color: white;
+  border: 5px solid white;
+
+}
+
 
 
 .footer {
