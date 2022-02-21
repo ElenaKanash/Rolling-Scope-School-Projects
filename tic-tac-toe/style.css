@@ -90,8 +90,13 @@ body {
   width: 330px;
   height: 330px;
   background-color: transparent;
-
 }
+
+.active {
+  /* background-color: #AF9DAF; */
+  background-color: rgba(175, 157, 175, .2)
+}
+
 .ceil {
   display: flex;
   justify-content: center;
@@ -99,13 +104,47 @@ body {
   width: 110px;
   height: 110px;
   border: 1px solid white;
-  font-size: 32px;
+  font-size: 38px;
   cursor: pointer;
 }
 
 .winner {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.winnerCount {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(175, 157, 175, .5)
+}
+
+.modal__window {
+  width: 600px;
+  height: 600px;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
 }
 
 .btn {
@@ -122,8 +161,8 @@ body {
   background-color: #948395;
   color: white;
   border: 5px solid white;
-
 }
+
 
 
 
