@@ -73,15 +73,14 @@ function playAudio() {
     audio.currentTime = 0;
     audio.play();
     isPlay = true;
+    mute.classList.add('active');
   } else {
     mute.src = './assets/play.png';
     audio.pause();
     isPlay = false;
+    mute.classList.remove('active');
   }
 }
 
-function changeImage() {
-  mute.src = './assets/play.png';
-}
-
 mute.addEventListener('click', playAudio)
+
