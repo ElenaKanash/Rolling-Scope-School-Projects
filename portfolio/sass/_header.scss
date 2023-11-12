@@ -1,0 +1,164 @@
+.header{
+  background-image: url('../assets/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center 0;
+
+  @include medium-scrin {
+    background-position: -5px -30px;
+    background-size: auto 620px;
+  }
+
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  @include medium-scrin {
+    padding: 20px 20px;
+    overflow-x: hidden;
+  }
+}
+
+.logo {
+  transition: all .3s;
+  &:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+}
+
+.nav {
+  margin-left: auto;
+  @include medium-scrin {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 620px;
+    //height: 1024px;
+    height: 100%;
+    background-color: $bg-color;
+    z-index: 5;
+    padding-top: 134px;
+    padding-left: 137px;
+    transform: translateX(100%);
+    transition: .3s all linear;
+  }
+  @include small-scrin {
+    width: 100%;
+    padding-left: 40px;
+
+
+  }
+}
+
+.nav_active {
+  transform: translateX(0);
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include medium-scrin{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.nav__item {
+  padding-right: 31px;
+  @include medium-scrin {
+    //width: 100%;
+  }
+}
+
+.nav__link {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 50px;
+  color: $white-color;
+  transition: all .3s;
+  &:hover {
+    color: $gold-color;
+  }
+  @include medium-scrin {
+    font-size: 34px;
+    line-height: 73px;
+
+  }
+}
+
+.switch {
+  @include medium-scrin {
+    margin-left: auto;
+  }
+}
+
+
+.switch__btn {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  color: $white-color;
+  transition: all .3s;
+  &:hover {
+    color: $gold-color;
+  }
+}
+
+.switch__btn.active {
+  color: $gold-color;
+}
+
+.switch__en {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  //color: $gold-color;
+  color: $white-color;
+  transition: all .3s;
+  &:hover {
+    cursor: pointer;
+    //color: $white-color;
+  }
+}
+
+.switch__divider {
+  padding: 0 4px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+.switch__ru {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  color: $white-color;
+  transition: all .3s;
+  &:hover {
+    cursor: pointer;
+    color: $gold-color;
+  }
+}
+
+.theme-switch.light {
+  background-image: url('../assets/svg/sun.svg');
+}
+
+.theme-switch {
+  background-image: url('../assets/svg/moon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    cursor: pointer;
+  }
+}
+
+

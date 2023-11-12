@@ -1,0 +1,21 @@
+$bg-color:#000000;
+$gold-color: #BDAE82;
+$white-color: #FFFFFF;
+
+@mixin large-scrin () {
+  @media (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin medium-scrin () {
+  @media (max-width: 769px) {
+    @content;
+  }
+}
+
+@mixin small-scrin () {
+  @media (max-width: 576px) {
+    @content;
+  }
+}

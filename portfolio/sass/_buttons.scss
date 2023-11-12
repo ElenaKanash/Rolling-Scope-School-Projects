@@ -1,0 +1,62 @@
+.btn {
+  width: 220px;
+  padding: 6px 0px;
+  background-color: $gold-color;
+  border: 1px solid $gold-color;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: $bg-color;
+  transition: all .3s;
+  &:hover {
+    color: $white-color;
+  }
+  }
+
+  .btn--transparent {
+    background-color: transparent;
+    color: $gold-color;
+  }
+
+.portfolio-btn.active{
+  background-color: $gold-color;
+  color: #000;
+}
+
+  .btn--price {
+    padding: 7px 37px;
+  }
+
+  .btn--form {
+    @include medium-scrin {
+    margin: 0 auto;
+    display: block;
+    }
+  }
+
+.buttons {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include large-scrin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+    width: 445px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .btn {
+    @include large-scrin {
+      width: calc(50% - 5px);
+    }
+  }
+
+  @include small-scrin {
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+}
