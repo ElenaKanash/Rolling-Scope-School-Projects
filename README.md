@@ -1,7 +1,5 @@
-![image](https://github.com/ElenaKanash/Rolling-Scope-School-Projects/assets/78100493/e04b7afb-f3bb-4d0d-a968-8aa20b785f24)# Rolling Scope school projects:
 
-
-# Museum - landing page of the Louvre - one of the largest and most popular art museums in the world.
+## Museum - landing page of the Louvre - one of the largest and most popular art museums in the world.
 
 Deploy: https://rolling-scopes-school.github.io/elenakanash-JSFEPRESCHOOL/museum/
 
